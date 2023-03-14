@@ -35,6 +35,7 @@
    label {
     margin-bottom: 10px;
     font-weight: bold;
+    text-align: left;
    }
    
    input {
@@ -66,3 +67,24 @@
     color: #4285f4;
     font-weight: bold;
    }
+
+@media (min-width: 320px) and (max-width: 767px){
+    form {
+        display: flex;
+        flex-direction: column;
+       }
+    .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   .login-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+   }
+}
