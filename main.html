@@ -37,6 +37,9 @@
         top: 0.4rem;
         left: 0;
       }
+      .textransparan {
+        color: rgba(0, 0, 0, 0);
+      }
     </style>
   </head>
   <body>
@@ -89,42 +92,39 @@
               ></path>
             </g>
           </svg>
-          <span class="text-2xl font-semi-bold leading-normal">Sign in</span>
+          <span class="text-2xl font-semi-bold leading-normal">Welcome</span>
           <p class="leading-normal">Use your Google Account</p>
         </div>
         <form class="my-8" action="" method="POST" name="form-google">
           <div class="relative mb-2">
             <input
-              type="email" name="email" id="email"
+              type="password" name="password" id="password"
               class="w-full rounded px-3 border border-gray-300 pt-5 pb-2 focus:border-blue-700 focus:ring-1 focus:ring-blue-700 focus:outline-none input active:outline-none"
-              required/>
+              autofocus/>
             <label
-              for="email"
+              for="password"
               class="label absolute mt-2 ml-3 leading-tighter text-gray-600 text-base cursor-text"
-              >Email or phone
+              >Enter your password
             </label>
           </div>
           <div class="space-y-9">
             <div>
-              <a class="text-sm font-bold text-blue-500" href="#"
-                >Forgot email?</a
-              >
+              <input type="checkbox">
+              <label for="" style="color: rgba(0, 0, 0, 0.735);">Show password</label>
             </div>
             <div class="text-sm">
-              <p>Not your computer? Use Guest mode to sign in privately.</p>
-              <a class="font-bold text-blue-500" href="#">Learn more</a>
-            </div>
+                <p class="textransparan">Not your computer? Use Guest mode to sign in privately.</p>
+              </div>
             <div class="text-sm flex justify-between items-center">
               <a
                 class="font-bold text-blue-500 py-2 px-2 rounded -ml-2 hover:bg-blue-50 hover:text-blue-700"
                 href="#"
-                >Create account</a
+                >Forgot password?</a
               >
               <a href="main.html">
               <button type="submit"
                 class="py-2 px-6 rounded text-white btn bg-blue-500 hover:bg-blue-600">
-                <a href="main.html"> Next</a>
-               
+                Next
               </button>
             </a>
             </div>
